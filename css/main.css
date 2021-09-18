@@ -587,10 +587,12 @@ img {
   left: 5%;
   width: 150px;
   height: 300px;
-  background-color: rgb(81, 119, 254);;
+  background-color: rgb(81, 119, 254);
+  ;
   -webkit-clip-path: polygon(35% 0, 100% 0, 68% 100%, 0 100%);
   clip-path: polygon(35% 0, 100% 0, 68% 100%, 0 100%);
 }
+
 .container-section8 .row .container-1 .contenedor-texto ul {
   list-style: none;
   margin-top: .5rem;
@@ -613,8 +615,6 @@ img {
   margin-left: .5rem;
 }
 
-
-
 /*****SECCION 8 FIN*******/
 
 /*****SECCION 9*******/
@@ -622,39 +622,259 @@ img {
 .seccion9 {
   margin-top: 5rem;
   width: 100%;
-  height: 400px;
+  height: 600px;
   background-image: linear-gradient( rgba(69, 39, 129, .8), rgba(69, 39, 129, .8)), url(../img/woman-runner-morning-exercise-on-sunrise-beach-2WB3G9Z.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
-  align-items: center;
   color: white;
 }
 
-.seccion9 .contenedor-seccion4 {
-  width: 40%;
-  margin: 0 auto;
-  padding-top: 4rem;
+.seccion9 .contenedor-texto-seccion9 {
+  position: absolute;
+  z-index: 1000;
+  width: 25%;
+  top: 25%;
+  left: 60%;
+  margin-top: 3rem;
 }
 
-.seccion9 .contenedor-seccion4 h2 {
-  margin-bottom: 2rem;
+.seccion9 .contenedor-texto-seccion9 h1 {
+  font-family: var(--fuente-RalewayLight);
+  font-weight: lighter;
 }
 
-.seccion9 .contenedor-seccion4 p {
-  margin: 2rem 0;
-}
-
-.seccion9 .contenedor-seccion4 .boton-clase-generica {
-  width: 50%;
-  margin: 0 auto;
+.seccion9 .contenedor-texto-seccion9 p {
   font-size: 1.2rem;
+}
+
+.boton-seccion9 {
+  background-color: white;
+  color: rgb(128, 77, 172);
+  padding: .5rem 1rem;
+  width: 50%;
+}
+
+.boton-seccion9 a {
+  font-size: 1.1rem;
+  color: rgb(128, 77, 172);
+  font-family: var(--fuente-GothamBlack);
 }
 
 /*****SECCION 9 FIN*******/
 
+.section10 {
+  text-align: center;
+}
 
+.section10 .contenedor-numeros {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.section10 .contenedor-numeros .contenido-numero {
+  width: 40%;
+  text-align: left;
+  padding: 2rem;
+}
+
+.section10 .contenedor-numeros .contenido-numero:nth-child(2) {
+  padding-top: 3.5rem;
+}
+
+.section10 .contenedor-numeros .contenido-numero:nth-child(3) {
+  padding-top: 5rem;
+}
+
+.section10 .contenedor-numeros .contenido-numero p {
+  font-size: 1.3rem;
+}
+
+.section10 .contenedor-numeros .contenido-numero .numero {
+  -webkit-text-stroke: 2px rgb(69, 39, 129);
+  color: transparent;
+  font-weight: bold;
+  font-size: 10rem;
+  top: -35%;
+  left: -5%;
+}
+
+.section10 .contenedor-numeros .contenido-numero:nth-child(2) .numero {
+  top: -30%;
+  left: -5%;
+}
+
+.section10 .contenedor-numeros .contenido-numero:nth-child(3) .numero {
+  top: -25%;
+  left: -5%;
+}
+
+.section10 .contenedor-boton {
+  width: 25%;
+  margin: 0 auto;
+}
+
+/*SECCION 10 FIN*/
+
+/*SECCION 11*/
+
+.article11 {
+  background-color: rgb(234, 232, 235);
+}
+
+.section11 {
+  width: 70%;
+  padding: 1rem 0;
+  margin: 7rem auto;
+}
+
+.contenedor-preguntas {
+  z-index: 100;
+}
+
+.section11 .contenedor h2 {
+  font-size: 2rem;
+  margin-bottom: 1.8rem;
+}
+
+.section11 .contenedor h2 span {
+  color: rgb(128, 77, 172);
+}
+
+.contenedor-preguntas .preguntas {
+  background-color: white;
+  width: 55%;
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: .2rem 1.4rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.contenedor-preguntas .preguntas .contenedor-pregunta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedor-preguntas .preguntas .respuesta {
+  font-weight: lighter;
+  font-size: 1.1rem;
+}
+
+.contenedor-preguntas .preguntas img {
+  width: 4%;
+}
+
+.section11 .contenedor .position-absolute {
+  -webkit-clip-path: polygon(30% 0, 100% 0, 70% 100%, 0 100%);
+  clip-path: polygon(30% 0, 100% 0, 70% 100%, 0 100%);
+  z-index: 0;
+  top: -10%;
+  left: 55%;
+  width: 55%;
+}
+
+.section11 .contenedor .position-absolute img {
+  width: 100%;
+}
+
+.cuadro-azul {
+  position: absolute;
+  background-image: linear-gradient( rgba(112, 234, 213, .5), rgba(112, 234, 213, .5)), url(../img/mujerseccion12.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-clip-path: polygon(0 1%, 62% 0, 100% 100%, 34% 100%);
+  clip-path: polygon(0 1%, 62% 0, 100% 100%, 34% 100%);
+  width: 250px;
+  height: 250px;
+  top: -15%;
+  left: 55%;
+  z-index: 1000;
+}
+
+/*SECCION 12*/
+
+.section12 {
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.section12 .container-section12 {
+  background-color: rgb(74, 109, 237);
+  overflow: hidden
+}
+
+.container-section12 .row .contenedor-1 .text-de-fondo {
+  width: 120%;
+  position: absolute;
+  font-size: 6rem;
+  margin-left: -1rem;
+}
+
+.container-section12 .row .contenedor-1 .text-de-fondo p {
+  margin: 0;
+  margin-top: -1.2rem;
+  margin-bottom: -1.2rem;
+  padding: 0;
+  color: rgba(255, 255, 255, .5);
+  font-weight: bold;
+  font-family: 'BarlowCondensedextraitalic';
+}
+
+.contenedor-img-section12 {
+  z-index: 100;
+}
+
+.seccion12LetrasRellenas {
+  -webkit-text-stroke: .5px rgba(255, 255, 255, .5);
+  color: transparent;
+  font-weight: bold;
+  font-size: 6rem;
+}
+
+.container-section12 .row .contenedor-2 {
+  color: white;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 9rem;
+}
+
+.container-section12 .row .contenedor-2 h1 {
+  font-size: 3rem;
+  font-family: 'BarlowCondensedextraitalic';
+}
+
+.container-section12 .row .contenedor-2 p {
+  font-size: 1.2rem;
+}
+
+.contenedor-boton {
+  margin-top: 4rem;
+}
+
+.contenedor-boton-seccion-12 {
+  border: 1px solid white;
+  background-color: transparent;
+  padding: .8rem 1.6rem;
+  border-radius: .5rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/*FOOTER*/
+
+footer .d-flex {
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
 
 /* ==========================================================================
    Helper classes
