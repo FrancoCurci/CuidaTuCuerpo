@@ -247,7 +247,18 @@ img {
     display: none;
   }
 }
-
+@media (max-width:425px) {
+  .container-header .container-nav .logo {
+    width: 20%;
+  }
+  .container-header .container-nav .logo img {
+    margin-top: -2rem;
+    left: 100%;
+  }
+  .boton-nav {
+    display: none;
+  }
+}
 /*****ESTILOS HEADER*******/
 
 .contenedor-header-fixed {
@@ -374,16 +385,13 @@ img {
 }
 
 @media (max-width:320px) {
-  
   .contenedor-header-fixed .container-text .contenedor-icons .icono-estrellas {
     width: 200%;
   }
-  
   .contenedor-header-fixed .boton-me-uno {
     width: 60%;
     padding: .8rem 1.2rem;
   }
- 
 }
 
 /*****FIN ESTILOS HEADER*******/
@@ -516,6 +524,7 @@ img {
   font-weight: bold;
   text-transform: uppercase;
   font-family: var(--fuente-GothamBookItalic);
+  overflow-x: hidden;
 }
 
 .container-section3 .row .container-2 .contenedor-img-1 {
@@ -549,7 +558,7 @@ img {
     flex-direction: column;
   }
   .container-section3 .row .container-1 .cuadro-violeta {
-    width: 130%;
+    width: 100%;
     left: -15%;
     top: 210%;
     margin: 0;
@@ -560,7 +569,7 @@ img {
     padding: 2rem 1rem;
   }
   .container-section3 .row .container-1 .cuando-zul {
-    width: 130%;
+    width: 100%;
   }
   .container-section3 .row .container-2 .contenedor-texto {
     top: -170%;
@@ -599,6 +608,41 @@ img {
   }
   .container-section3 .row .container-2 .contenedor-texto {
     top: -220%;
+    left: -30%;
+    font-size: 6rem;
+  }
+}
+
+@media (max-width:425px) {
+  .seperador-mobil {
+    height: 300px;
+    width: 100%;
+  }
+  .seperador-mobil-fluid {
+    height: 100px;
+    width: 100%;
+  }
+  .container-1 {
+    position: static;
+    display: flex;
+    flex-direction: column;
+  }
+  .container-section3 .row .container-1 .cuadro-violeta {
+    width: 130%;
+    left: -15%;
+    top: 230%;
+    margin: 0;
+    clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
+  }
+  .container-section3 .row .container-1 .cuando-zul {
+    top: 170%;
+    padding: 2rem 1rem;
+  }
+  .container-section3 .row .container-1 .cuando-zul {
+    width: 130%;
+  }
+  .container-section3 .row .container-2 .contenedor-texto {
+    top: -170%;
     left: -30%;
     font-size: 6rem;
   }
@@ -905,9 +949,62 @@ img {
   }
 }
 
-@media (max-width:320px){
+@media (max-width:320px) {
   .seperador-medio {
     height: 00px!important;
+  }
+}
+
+@media (max-width:425px) {
+  .container-section6 .row .container-1 {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  .container-section6 .row .container-1 .contenedor-texto {
+    width: 100%;
+  }
+  .container-section6 .row .container-2 .cuadro-violeta-s6 {
+    top: -7%;
+    left: -5%;
+  }
+  .container-section7 .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .container-section7 .row .container-1 {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  .container-section7 .row .container-1 .contenedor-texto {
+    width: 100%;
+  }
+  .container-section7 .row .container-2 .contenedor-imagen-seccion7 {
+    width: 110%;
+  }
+  .container-section7 .row .container-2 .cuadro-violeta-s7 {
+    position: absolute;
+    bottom: 10%;
+    left: 85%;
+  }
+  .container-section8 .row .container-1 {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  .container-section8 .row .container-1 .contenedor-texto {
+    width: 100%;
+  }
+  .container-section8 .row .container-2 .contenedor-imagen-seccion8 {
+    width: 120%;
+  }
+  .container-section8 .row .container-2 .cuadro-violeta-s8 {
+    top: -5%;
+    left: -5%;
+  }
+  .seperador-medio {
+    height: 50px!important;
   }
 }
 
@@ -943,9 +1040,10 @@ img {
 }
 
 .boton-seccion9 {
+  text-align: center;
   background-color: white;
   color: rgb(128, 77, 172);
-  padding: .5rem 1rem;
+  padding: .8rem 1.1rem;
   width: 50%;
 }
 
@@ -1081,8 +1179,8 @@ img {
     left: 10%;
   }
 }
-@media (max-width:320px) {
 
+@media (max-width:320px) {
   .section10 .contenedor-numeros {
     flex-direction: column;
     width: 100%;
@@ -1117,7 +1215,6 @@ img {
     left: -10%;
   }
 }
-
 
 /*SECCION 10 FIN*/
 
@@ -1248,12 +1345,12 @@ img {
   }
 }
 
-@media (max-width:320px) {
+@media (max-width:425px) {
   .section11 {
     width: 95%;
   }
   .contenedor-preguntas .preguntas {
-    width: 100%;
+    width: 100%!important;
   }
   .contenedor-preguntas .preguntas .contenedor-pregunta {
     position: relative;
@@ -1262,7 +1359,6 @@ img {
   .section11 .contenedor {
     position: relative!important;
   }
-  
   .cuadro-azul {
     position: absolute;
     width: 200px;
@@ -1272,6 +1368,31 @@ img {
     z-index: 10;
   }
 }
+
+@media (max-width:320px) {
+  .section11 {
+    width: 95%;
+  }
+  .contenedor-preguntas .preguntas {
+    width: 100%!important;
+  }
+  .contenedor-preguntas .preguntas .contenedor-pregunta {
+    position: relative;
+    z-index: 100000;
+  }
+  .section11 .contenedor {
+    position: relative!important;
+  }
+  .cuadro-azul {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 80%;
+    left: -20%;
+    z-index: 10;
+  }
+}
+
 /*SECCION 12*/
 
 .section12 {
@@ -1400,6 +1521,35 @@ img {
     display: none!important;
   }
 }
+@media (max-width:425px) {
+  .section12 .container-section12 .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .container-section12 .row .contenedor-2 {
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 0rem;
+  }
+  .container-section12 .row .contenedor-1 .text-de-fondo {
+    width: 240%;
+    position: absolute;
+    font-size: 4.2rem;
+    margin-left: 0rem;
+  }
+  .seccion12LetrasRellenas {
+    font-size: 4.2rem;
+  }
+  .container-section12 .row .contenedor-2 .contenedor-texto-extra {
+    margin-top: 1rem;
+    align-items: center;
+    top: 20%;
+  }
+  .ciculo-celeste {
+    display: none!important;
+  }
+}
 
 /*FOOTER*/
 
@@ -1422,8 +1572,108 @@ footer div {
   footer .d-flex {
     padding: 1rem 0;
   }
+  .redes-sociales img{
+    width: 20%!important;
+  }
 }
 
+/*acordeon*/
+
+/*Acco*/
+
+.ac-container label {
+  position: relative;
+  z-index: 20;
+  display: block;
+  cursor: pointer;
+  line-height: 33px;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#eaeaea', GradientType=0);
+}
+
+.ac-container label:hover {
+  background: #fff;
+}
+
+.contenedor-preguntas .preguntas {
+  background-color: white;
+  width: 55%;
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: .2rem 1.4rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.contenedor-preguntas .preguntas {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedor-preguntas .preguntas .respuesta {
+  font-weight: lighter;
+  font-size: 1.1rem;
+}
+
+.ac-container label:hover:after, .ac-container input:checked+label:hover:after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 13px;
+  top: 7px;
+}
+
+.ac-container input {
+  display: none;
+}
+
+.ac-container article {
+  margin-top: -1px;
+  overflow: hidden;
+  height: 0;
+  position: relative;
+  z-index: 10;
+  -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+
+.ac-container article p {
+  padding-top: 1rem;
+  font-weight: normal;
+}
+
+.ac-container input:checked~article {
+  -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  -o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  -ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  margin: .2rem;
+}
+
+.ac-container input:checked~article.ac-small {
+  height: 250px;
+}
+
+.ac-container input:checked~article.ac-medium {
+  height: 250px;
+}
+
+.ac-container input:checked~article.ac-large {
+  height: 250px;
+}
+
+@media (max-width:425px) {
+  .ac-container input:checked~article.ac-small {
+    height: 300px;
+  }
+}
 
 /* ==========================================================================
    Helper classes
