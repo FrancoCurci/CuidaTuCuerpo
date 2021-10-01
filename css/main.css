@@ -254,7 +254,7 @@ img {
   }
   .container-header .container-nav .logo img {
     margin-top: 0;
-    left: 100%;
+    left: 40%;
   }
   .boton-nav {
     display: none;
@@ -365,6 +365,12 @@ header {
   margin-bottom: 1.5rem;
 }
 
+.caja-imagen-header-2 {
+  width: 31.5%;
+  left: 85%;
+  overflow-x: hidden;
+}
+
 @media (max-width:768px) {
   .contenedor-header-fixed {
     width: 100%;
@@ -394,7 +400,9 @@ header {
     margin-left: -3rem;
   }
   .caja-imagen-header-2 {
-    display: none;
+    width: 40.3%;
+    left: 70%;
+    overflow-x: hidden;
   }
 }
 
@@ -651,12 +659,14 @@ header {
   margin-left: 2rem;
 }
 
-@media (max-width:425px) {
+@media (max-width:320px) {
   .cuadro-violeta {
     position: absolute;
-    width: 100%;
-    left: 0%;
-    top: 120%;
+    width: 120%;
+    margin: 0;
+    margin-top: -50px!important;
+  }
+  .cuadro-violeta p {
     margin: 0;
   }
   .cuando-zul {
@@ -667,6 +677,31 @@ header {
   }
   .cuando-zul {
     width: 130%;
+  }
+}
+
+@media (max-width:425px) {
+  .cuadro-violeta {
+    position: absolute;
+    width: 120%;
+    left: -10%;
+    top: 125%;
+    margin: 0;
+  }
+  .cuando-zul {
+    position: absolute;
+    top: 95%;
+    left: -20%;
+    padding: 2rem 1rem;
+  }
+  .cuando-zul {
+    width: 130%;
+  }
+}
+
+@media(max-width:768px) {
+  .mobil-none {
+    display: none;
   }
 }
 
@@ -1706,6 +1741,25 @@ footer div {
   .ac-container input:checked~article.ac-small {
     height: 300px;
   }
+}
+
+/*ACORDEON BOOTSTRAP*/
+
+.accordion-button.collapsed::after {
+  background-image: url(../img/icons/plus.svg);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../img/icons/plus.svg);
+}
+
+.contenedor-preguntas {
+  width: 50%;
+}
+
+.accordion-item {
+  margin-bottom: 1rem;
+  border: none;
 }
 
 /* ==========================================================================
