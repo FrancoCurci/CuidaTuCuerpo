@@ -250,10 +250,10 @@ img {
 
 @media (max-width:425px) {
   .container-header .container-nav .logo {
-    width: 20%;
+    width: 12%;
   }
   .container-header .container-nav .logo img {
-    margin-top: -2rem;
+    margin-top: 0;
     left: 100%;
   }
   .boton-nav {
@@ -262,6 +262,10 @@ img {
 }
 
 /*****ESTILOS HEADER*******/
+
+header {
+  overflow-x: hidden;
+}
 
 .contenedor-header-fixed {
   display: flex;
@@ -462,6 +466,45 @@ img {
 
 /*****SECCION 2 FIN *******/
 
+/*letras flotantes*/
+
+.contenedor-de-contenedor-texto-seccion-flotante {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+
+.contenedor-texto-seccion-flotante {
+  position: absolute;
+  width: 600%;
+  font-size: 7.5rem;
+  z-index: 100;
+  left: 40%;
+  top: 40%;
+  -webkit-text-stroke: 2px rgb(234, 225, 242);
+  color: transparent;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: var(--fuente-GothamBookItalic);
+}
+
+@media(max-width:425px) {
+  .contenedor-de-contenedor-texto-seccion-flotante {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+  }
+  .contenedor-texto-seccion-flotante {
+    position: absolute;
+    width: 600%;
+    z-index: 100;
+    left: -50%;
+    top: -30%;
+    margin: 0;
+  }
+}
+
 /*****SECCION 3*******/
 
 .container-section3 {
@@ -491,50 +534,8 @@ img {
   font-family: 'GothamBookItalic';
 }
 
-.container-section3 .row .container-1 .cuando-zul {
-  position: absolute;
-  color: white;
-  left: -15%;
-  top: 55%;
-}
-
-.container-section3 .row .container-1 .cuando-zul img {
-  width: 50%;
-  background-color: var(--color-secundario);
-  -webkit-clip-path: polygon(28% 0, 100% 0%, 69% 100%, 0% 100%);
-  clip-path: polygon(28% 0, 100% 0%, 69% 100%, 0% 100%);
-  padding: 5rem 3rem;
-}
-
-.container-section3 .row .container-1 .cuadro-violeta {
-  position: absolute;
-  background-color: var(--colo-cuadroviloeta);
-  width: 130%;
-  padding: 1rem 3rem;
-  -webkit-clip-path: polygon(5% 0, 100% 0%, 96% 100%, 0% 100%);
-  clip-path: polygon(5% 0, 100% 0%, 96% 100%, 0% 100%);
-  left: 8%;
-  top: 62%;
-  color: white;
-  z-index: 1000;
-}
-
-.container-section3 .row .container-1 .cuadro-violeta p {
-  margin-left: 2rem;
-}
-
-.container-section3 .row .container-2 .contenedor-texto {
-  width: 1000%;
-  font-size: 7.5rem;
-  z-index: 100;
-  top: -15%;
-  left: -30%;
-  -webkit-text-stroke: 2px rgb(234, 225, 242);
-  color: transparent;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: var(--fuente-GothamBookItalic);
-  overflow-x: hidden;
+.container-section3 .row .container-2 {
+  position: relative;
 }
 
 .container-section3 .row .container-2 .contenedor-img-1 {
@@ -543,14 +544,18 @@ img {
   width: 100%;
 }
 
-.container-section3 .row .container-2 .contenedor-img-2 {
+.container-section3 .row .container-2 .contenedor-imagen-flotante {
   position: absolute;
   -webkit-clip-path: polygon(28% 0, 100% 0%, 70% 100%, 0% 100%);
   clip-path: polygon(28% 0, 100% 0%, 70% 100%, 0% 100%);
-  width: 40%;
+  height: 300px;
+  width: 250px;
   top: 5%;
   left: 67%;
-  background-image: linear-gradient(rgba(69, 39, 129, .5));
+  background-image: linear-gradient( rgba(131, 156, 255, .6), rgba(131, 156, 255, .6)), url(../img/seccion-3imgsec.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (max-width:768px) {
@@ -566,25 +571,6 @@ img {
     position: static;
     display: flex;
     flex-direction: column;
-  }
-  .container-section3 .row .container-1 .cuadro-violeta {
-    width: 100%;
-    left: -15%;
-    top: 210%;
-    margin: 0;
-    clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
-  }
-  .container-section3 .row .container-1 .cuando-zul {
-    top: 160%;
-    padding: 2rem 1rem;
-  }
-  .container-section3 .row .container-1 .cuando-zul {
-    width: 100%;
-  }
-  .container-section3 .row .container-2 .contenedor-texto {
-    top: -170%;
-    left: -30%;
-    font-size: 6rem;
   }
 }
 
@@ -602,25 +588,6 @@ img {
     display: flex;
     flex-direction: column;
   }
-  .container-section3 .row .container-1 .cuadro-violeta {
-    width: 130%;
-    left: -15%;
-    top: 180%;
-    margin: 0;
-    clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
-  }
-  .container-section3 .row .container-1 .cuando-zul {
-    top: 140%;
-    padding: 2rem 1rem;
-  }
-  .container-section3 .row .container-1 .cuando-zul {
-    width: 130%;
-  }
-  .container-section3 .row .container-2 .contenedor-texto {
-    top: -220%;
-    left: -30%;
-    font-size: 6rem;
-  }
 }
 
 @media (max-width:425px) {
@@ -637,28 +604,71 @@ img {
     display: flex;
     flex-direction: column;
   }
-  .container-section3 .row .container-1 .cuadro-violeta {
-    width: 130%;
-    left: -15%;
-    top: 230%;
-    margin: 0;
-    clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
+  .container-section3 .row .container-2 {
+    width: 100%;
   }
-  .container-section3 .row .container-1 .cuando-zul {
-    top: 170%;
-    padding: 2rem 1rem;
-  }
-  .container-section3 .row .container-1 .cuando-zul {
-    width: 130%;
-  }
-  .container-section3 .row .container-2 .contenedor-texto {
-    top: -170%;
-    left: -30%;
-    font-size: 6rem;
+  .container-section3 .row .container-2 .contenedor-imagen-flotante {
+    height: 150px;
+    width: 125px;
+    top: 5%;
+    left: 67%;
   }
 }
 
 /*****SECCION 3 FIN*******/
+
+/*cuadros flotantes*/
+
+.cuando-zul {
+  position: absolute;
+  color: white;
+  left: 4%;
+  top: 55%;
+}
+
+.cuando-zul img {
+  width: 50%;
+  background-color: var(--color-secundario);
+  -webkit-clip-path: polygon(28% 0, 100% 0%, 69% 100%, 0% 100%);
+  clip-path: polygon(28% 0, 100% 0%, 69% 100%, 0% 100%);
+  padding: 5rem 3rem;
+}
+
+.cuadro-violeta {
+  position: absolute;
+  background-color: var(--colo-cuadroviloeta);
+  width: 65%;
+  padding: 1rem 3rem;
+  -webkit-clip-path: polygon(5% 0, 100% 0%, 96% 100%, 0% 100%);
+  clip-path: polygon(5% 0, 100% 0%, 96% 100%, 0% 100%);
+  left: 15%;
+  top: 62%;
+  color: white;
+  z-index: 1000;
+}
+
+.cuadro-violeta p {
+  margin-left: 2rem;
+}
+
+@media (max-width:425px) {
+  .cuadro-violeta {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 120%;
+    margin: 0;
+  }
+  .cuando-zul {
+    position: absolute;
+    top: 95%;
+    left: -20%;
+    padding: 2rem 1rem;
+  }
+  .cuando-zul {
+    width: 130%;
+  }
+}
 
 /*****SECCION 4*******/
 
@@ -907,6 +917,9 @@ img {
 /*****SECCION 8 FIN*******/
 
 @media (max-width:768px) {
+  .container-section6 {
+    overflow: hidden;
+  }
   .container-section6 .row .container-1 {
     width: 80%;
     margin: 0 auto;
@@ -918,6 +931,9 @@ img {
   .container-section6 .row .container-2 .cuadro-violeta-s6 {
     top: -20%;
     left: -5%;
+  }
+  .container-section7 {
+    overflow: hidden;
   }
   .container-section7 .row {
     display: flex;
@@ -931,13 +947,19 @@ img {
   .container-section7 .row .container-1 .contenedor-texto {
     width: 100%;
   }
+  .container-section7 .row .container-2 {
+    overflow: hidden;
+  }
   .container-section7 .row .container-2 .contenedor-imagen-seccion7 {
-    width: 110%;
+    width: 100%;
   }
   .container-section7 .row .container-2 .cuadro-violeta-s7 {
     position: absolute;
-    bottom: 10%;
-    left: 85%;
+    bottom: 0%;
+    left: 76%;
+  }
+  .container-section8 {
+    overflow: hidden;
   }
   .container-section8 .row .container-1 {
     width: 80%;
@@ -948,7 +970,7 @@ img {
     width: 100%;
   }
   .container-section8 .row .container-2 .contenedor-imagen-seccion8 {
-    width: 120%;
+    width: 100%;
   }
   .container-section8 .row .container-2 .cuadro-violeta-s8 {
     top: -5%;
