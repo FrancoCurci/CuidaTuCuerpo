@@ -1638,43 +1638,27 @@ footer div {
 }
 
 @media (max-width:768px) {
+  footer {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
   footer .d-flex {
     padding: 1rem 0;
   }
+  footer div {
+    width: 90%;
+  }
   .redes-sociales img {
     width: 20%!important;
+  }
+  .redes-sociales {
+    text-align: start;
   }
 }
 
 /*acordeon*/
 
 /*Acco*/
-
-.ac-container label {
-  position: relative;
-  z-index: 20;
-  display: block;
-  cursor: pointer;
-  line-height: 33px;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#eaeaea', GradientType=0);
-}
-
-.ac-container label:hover {
-  background: #fff;
-}
-
-.contenedor-preguntas .preguntas {
-  background-color: white;
-  width: 55%;
-  border-radius: .5rem;
-  margin-bottom: 1rem;
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  padding: .2rem 1.4rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
 
 .contenedor-preguntas .preguntas {
   justify-content: space-between;
@@ -1684,64 +1668,6 @@ footer div {
 .contenedor-preguntas .preguntas .respuesta {
   font-weight: lighter;
   font-size: 1.1rem;
-}
-
-.ac-container label:hover:after, .ac-container input:checked+label:hover:after {
-  content: '';
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  right: 13px;
-  top: 7px;
-}
-
-.ac-container input {
-  display: none;
-}
-
-.ac-container article {
-  margin-top: -1px;
-  overflow: hidden;
-  height: 0;
-  position: relative;
-  z-index: 10;
-  -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-  -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-  -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-  -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-  transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-}
-
-.ac-container article p {
-  padding-top: 1rem;
-  font-weight: normal;
-}
-
-.ac-container input:checked~article {
-  -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-  -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-  -o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-  -ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-  transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-  margin: .2rem;
-}
-
-.ac-container input:checked~article.ac-small {
-  height: 250px;
-}
-
-.ac-container input:checked~article.ac-medium {
-  height: 250px;
-}
-
-.ac-container input:checked~article.ac-large {
-  height: 250px;
-}
-
-@media (max-width:425px) {
-  .ac-container input:checked~article.ac-small {
-    height: 300px;
-  }
 }
 
 /*ACORDEON BOOTSTRAP*/
@@ -1756,6 +1682,12 @@ footer div {
 
 .contenedor-preguntas {
   width: 50%;
+}
+
+@media(max-width:768px) {
+  .contenedor-preguntas {
+    width: 100%;
+  }
 }
 
 .accordion-item {
