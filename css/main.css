@@ -217,7 +217,7 @@ img {
 
 .container-header .container-nav .logo {
   position: relative;
-  width: 5%;
+  width: 5rem;
 }
 
 .container-header .container-nav .logo img {
@@ -236,9 +236,6 @@ img {
 }
 
 @media (max-width:768px) {
-  .container-header .container-nav .logo {
-    width: 20%;
-  }
   .container-header .container-nav .logo img {
     margin-top: -2rem;
     left: 0%;
@@ -250,7 +247,7 @@ img {
 
 @media (max-width:425px) {
   .container-header .container-nav .logo {
-    width: 12%;
+    width: 3.5rem;
   }
   .container-header .container-nav .logo img {
     margin-top: 0;
@@ -262,10 +259,6 @@ img {
 }
 
 /*****ESTILOS HEADER*******/
-
-header {
-  overflow-x: hidden;
-}
 
 .contenedor-header-fixed {
   display: flex;
@@ -330,6 +323,20 @@ header {
   height: 700px;
 }
 
+.contenedor-img {
+  left: 20%;
+  overflow: hidden;
+}
+
+.contenedor-img-header-1 {
+  margin-right: -15rem;
+}
+
+.contenedor-img-header-2 {
+  position: relative;
+  left: 2%;
+}
+
 .contenedor-header-fixed .container-img .imagen-1 {
   width: 100%;
   -webkit-clip-path: polygon(17% 0, 94% 0, 75% 100%, 0% 100%);
@@ -337,8 +344,8 @@ header {
 }
 
 .imagen-header-2 {
-  -webkit-clip-path: polygon(17% 0, 94% 0, 75% 100%, 0% 100%);
-  clip-path: polygon(45% 0, 100% 0, 75% 100%, 0% 100%);
+  -webkit-clip-path: polygon(33% 0, 94% 0, 75% 100%, 0% 100%);
+  clip-path: polygon(33% 0, 100% 0, 75% 100%, 2% 100%);
 }
 
 .contenedor-imagen-sobrante {
@@ -369,6 +376,12 @@ header {
   width: 33.6%;
   left: 85%;
   overflow-x: hidden;
+}
+
+@media (max-width:1024px) {
+  .contenedor-img-header-2 {
+    left: 10%;
+  }
 }
 
 @media (max-width:768px) {
@@ -403,6 +416,16 @@ header {
     width: 43.3%;
     left: 70%;
     overflow-x: hidden;
+  }
+  .contenedor-img {
+    left: 0;
+    height: 300px;
+  }
+  .contenedor-img-header-2 {
+    left: 15%;
+  }
+  .contenedor-img-header-2 {
+    left: 35%;
   }
 }
 
@@ -495,7 +518,24 @@ header {
   text-transform: uppercase;
   font-family: var(--fuente-GothamBookItalic);
 }
-
+@media(max-width:760px) {
+  .contenedor-de-contenedor-texto-seccion-flotante {
+    position: relative;
+    width: 100%;
+    height: 200px!important;
+    padding: 0r 0;
+    overflow: hidden;
+    margin-top: -3rem;
+  }
+  .contenedor-texto-seccion-flotante {
+    position: absolute;
+    width: 600%;
+    z-index: 100;
+    left: -50%;
+    top: -20%;
+    margin: 0;
+  }
+}
 @media(max-width:425px) {
   .contenedor-de-contenedor-texto-seccion-flotante {
     position: relative;
@@ -625,6 +665,15 @@ header {
   }
 }
 
+@media (max-width:1024px) {
+  .container-section3 .row .container-2 .contenedor-imagen-flotante {
+    height: 150px;
+    width: 125px;
+    top: 5%;
+    left: 60%;
+  }
+}
+
 /*****SECCION 3 FIN*******/
 
 /*cuadros flotantes*/
@@ -661,6 +710,27 @@ header {
   margin-left: 2rem;
 }
 
+@media (max-width:1175px) {
+  .cuando-zul {
+    top: 75%;
+    left: -3%;
+  }
+  .cuadro-violeta {
+    top: 80%;
+    left: 15%;
+  }
+}
+@media (max-width:1024px) {
+  .cuando-zul {
+    top: 75%;
+    left: -3%;
+  }
+  .cuadro-violeta {
+    top: 80%;
+    left: 15%;
+  }
+}
+
 @media (max-width:320px) {
   .cuadro-violeta {
     position: absolute;
@@ -685,9 +755,9 @@ header {
 @media (max-width:425px) {
   .cuadro-violeta {
     position: absolute;
-    width: 120%;
-    left: -10%;
-    top: 125%;
+    width: 120%!important;
+    left: -10%!important;
+    top: 110%!important;
     margin: 0;
   }
   .cuando-zul {
@@ -702,8 +772,12 @@ header {
 }
 
 @media(max-width:768px) {
-  .mobil-none {
-    display: none;
+  .cuando-zul {
+    top: 74%;
+    left: -13%;
+  }
+  .cuadro-violeta {
+    width: 85%;
   }
 }
 
@@ -966,7 +1040,7 @@ header {
     width: 100%;
   }
   .container-section6 .row .container-2 .cuadro-violeta-s6 {
-    top: -20%;
+    top: -5%;
     left: -5%;
   }
   .container-section7 {
@@ -992,8 +1066,8 @@ header {
   }
   .container-section7 .row .container-2 .cuadro-violeta-s7 {
     position: absolute;
-    bottom: 0%;
-    left: 76%;
+    bottom: 33%;
+    left: 80%;
   }
   .container-section8 {
     overflow: hidden;
@@ -1319,7 +1393,6 @@ header {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 0.75);
   -moz-box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 0.75);
 }
-
 
 .section11 .contenedor .position-absolute {
   -webkit-clip-path: polygon(30% 0, 100% 0, 70% 100%, 0 100%);
